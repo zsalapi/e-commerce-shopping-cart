@@ -36,7 +36,7 @@ A robust, real-time e-commerce shopping cart built with **Laravel 12**, **Livewi
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/zsalapi//e-commerce-shopping-cart.git
+git clone https://github.com/zsalapi/e-commerce-shopping-cart.git
 cd ./e-commerce-shopping-cart
 
 ```
