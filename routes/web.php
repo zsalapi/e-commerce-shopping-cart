@@ -1,13 +1,21 @@
 <?php
 
+use App\Livewire\ProductList;
 use Illuminate\Support\Facades\Route;
 
+// Public route: Everyone can see products
 Route::get('/', function () {
     return view('welcome');
-})->name('home');
+});
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+// Protected routes: Only logged-in users can access
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 
-require __DIR__.'/settings.php';
+    Route::view('profile', 'profile')
+        ->name('profile');
+});
+
+require __DIR__ . '/auth.php';
