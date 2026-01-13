@@ -1,9 +1,3 @@
-A good **README.md** is essential for any project, especially one involving background jobs, task scheduling, and real-time Livewire components. It serves as the documentation for you and any other developers who might use this code.
-
-Create a file named `README.md` in your project root and paste the following:
-
----
-
 # 🛒 Laravel 12 E-Commerce & Inventory System
 
 A robust, real-time e-commerce shopping cart built with **Laravel 12**, **Livewire 3**, and **Tailwind CSS**. This project features live stock management, background notifications, and automated sales reporting.
@@ -121,6 +115,3 @@ php artisan schedule:test
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
----
-
-**Would you like me to add a "Project Structure" section to this README to explain where all your Livewire components and Jobs are located?**
