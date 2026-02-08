@@ -3,12 +3,15 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use Livewire\WithPagination;
 use App\Models\Product;
 use App\Models\CartItem;
 use Illuminate\Support\Facades\Auth;
 
 class ProductList extends Component
 {
+    use WithPagination;
+
     // This tells the Product List to refresh whenever stock changes in the cart
     protected $listeners = ['stockChanged' => '$refresh'];
 
@@ -46,7 +49,7 @@ class ProductList extends Component
     public function render()
     {
         return view('livewire.product-list', [
-            'products' => Product::all() // Or your specific query
+            'products' => Product::simplePaginate(6),
         ]);
     }
 }
