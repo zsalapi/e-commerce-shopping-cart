@@ -43,6 +43,8 @@ class ProductList extends Component
             }
             // Tell the Cart to update
             $this->dispatch('cartUpdated');
+            // Event for the shopping cart alert
+            $this->dispatch('productAdded');
         }
     }
 

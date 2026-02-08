@@ -28,15 +28,18 @@
                     @if (Route::has('login'))
                         @auth
                             <a href="{{ url('/dashboard') }}"
-                                class="inline-flex items-center px-4 py-2 bg-indigo-600 text-white text-sm font-semibold rounded-lg hover:bg-indigo-700 transition" wire:navigate.hover>
+                                class="inline-flex items-center px-4 py-2 bg-indigo-600 text-white text-sm font-semibold rounded-lg hover:bg-indigo-700 transition"
+                                wire:navigate.hover>
                                 Go to Dashboard (Cart)
                             </a>
                         @else
                             <a href="{{ route('login') }}"
-                                class="text-sm font-semibold text-indigo-600 hover:text-indigo-800" wire:navigate.hover>Login</a>
+                                class="text-sm font-semibold text-indigo-600 hover:text-indigo-800"
+                                wire:navigate.hover>Login</a>
                             @if (Route::has('register'))
                                 <a href="{{ route('register') }}"
-                                    class="inline-flex items-center px-4 py-2 bg-gray-900 text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition" wire:navigate.hover>
+                                    class="inline-flex items-center px-4 py-2 bg-gray-900 text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition"
+                                    wire:navigate.hover>
                                     Register
                                 </a>
                             @endif

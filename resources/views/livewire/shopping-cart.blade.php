@@ -87,3 +87,14 @@
         @endif
     </div>
 </div>
+<!-- kód az eseményekhez amiket a Livewire komponensek küldenek, pl. termék hozzáadva vagy eltávolítva a kosárból -->
+@script
+<script>
+    Livewire.on('productRemoved', () => {
+        alert('Removed Product from cart!');
+    });
+    Livewire.on('productAdded', () => {
+        alert('Added Product to cart!');
+    });
+</script>
+@endscript

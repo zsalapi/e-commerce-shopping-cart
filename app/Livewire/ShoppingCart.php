@@ -49,6 +49,8 @@ class ShoppingCart extends Component
             $item->delete();
 
             $this->dispatch('stockChanged');
+            //esemény a shopping-cart.blade.php-ben, hogy megjelenjen a termék eltávolításáról szóló alert
+            $this->dispatch('productRemoved');
         }
     }
 
