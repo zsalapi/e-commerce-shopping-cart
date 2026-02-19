@@ -14,6 +14,11 @@
                     </x-nav-link>
 
                     @auth
+                        @if(auth()->user()->is_admin)
+                            <x-nav-link :href="route('admin.products')" :active="request()->routeIs('admin.products')" wire:navigate>
+                                {{ __('Products') }}
+                            </x-nav-link>
+                        @endif
                         @if(!auth()->user()->is_admin)
                             <x-nav-link href="#cart" class="text-indigo-600 font-bold">
                                 My Shopping Cart
