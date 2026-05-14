@@ -1,10 +1,22 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/livewire-starter-kit",
+    "name": "zsalapi/e-commerce-shopping-cart",
     "type": "project",
-    "description": "The official Laravel starter kit for Livewire.",
+    "description": "E-commerce shopping cart built with Laravel and Livewire, maintained by Zsolt Alapi.",
+    "authors": [
+        {
+            "name": "Zsolt Alapi",
+            "email": "zsalapi@tutanota.com"
+        },
+        {
+            "name": "Taylor Otwell and contributors (Laravel)"
+        }    
+    ],
     "keywords": [
         "laravel",
+        "livewire",
+        "e-commerce",
+        "shopping-cart",
         "framework"
     ],
     "license": "MIT",
